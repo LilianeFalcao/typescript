@@ -1,12 +1,12 @@
-import {Header} from "components"
-import { Nav } from "components/Nav/styles"
+import { Header, Nav, Main} from "components";
 
 const Home = () => {
-    return(
-        <>
-        <Header/>
-        <Nav/>
-        </>
-    )
-}
-export default Home 
+ return (
+ <>
+ <Header />
+ <Nav />
+ <Main />
+ </>
+ );
+};
+export default Home;
