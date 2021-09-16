@@ -16,15 +16,12 @@ const Nav = () => {
             </h3>
             <ul>
                 <li>
-                <Link to = "" >Configuração</Link>
-                </li>
-                <li>
-                    <Link to = "" >Perfil</Link>
+                    <Link to = "/perfil" >Perfil</Link>
                 </li>
                 <li> notificação </li>
             </ul>
         </div>
-        
+
         <h2>
             Topics
         </h2>
@@ -32,13 +29,13 @@ const Nav = () => {
         <ul>
             <li>
                 <picture>
-                    <img src={Animetop} alt= "anime art"/> 
+                    <img src={Animetop} alt= "anime"/> 
                 </picture>
             </li>
             <li>
                 Comic
                 <picture>
-                    <img src={comic} alt= "comic art"/> 
+                    <img src={comic} alt= "comic"/> 
                 </picture>
             </li>
             <li>
@@ -50,13 +47,13 @@ const Nav = () => {
             <li>
                 Wallpaper
                 <picture>
-                    <img src={wallpaper} alt= "wallpaper art"/> 
+                    <img src={wallpaper} alt= "wallpaper"/> 
                 </picture>
             </li>
             <li>
                 Tradicional art
                 <picture>
-                    <img src={Tradicional} alt= "tradicional art"/>
+                    <img src={Tradicional} alt= "tradicional"/>
                 </picture> 
             </li>
             <li>
