@@ -18,16 +18,18 @@ const Nav = () => {
                 <li>
                     <Link to = "/perfil" >Perfil</Link>
                 </li>
-                <li> notificação </li>
+                
             </ul>
         </div>
-
-        <h2>
-            Topics
-        </h2>
-
+        <div>
+            <h2>
+                Topics
+            </h2>
+        </div>
         <ul>
             <li>
+                <Link to = "/AnimeGuia" >Anime</Link>
+                
                 <picture>
                     <img src={Animetop} alt= "anime"/> 
                 </picture>

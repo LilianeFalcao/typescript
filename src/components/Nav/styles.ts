@@ -36,7 +36,15 @@ export const Nav = styled.nav`
     text-decoration: none;
     color: ${colors.white};
     }
-    h2{
+    ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1rem;
+    width: 100%;
+    color: ${colors.white};
+    }
+    div h2{
     background-color:${colors.bluerg};
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -45,14 +53,7 @@ export const Nav = styled.nav`
     color: ${colors.white};
     width: 70%;
     }
-    ul{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    color: ${colors.white};
-    list-style: none;
-    padding: 1rem;
-    }
+
     & div.anime{
     height: 100vh;
     }
