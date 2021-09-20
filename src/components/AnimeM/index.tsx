@@ -2,11 +2,11 @@ import * as s from "./styles"
 import dayss from "assets/img/19days.svg"
 import sereioo from "assets/img/sereio.svg"
 import bokuno from "assets/img/bnha.svg"
-import mononoke from "assets/img/mononokehime.svg"
+import ohto from "assets/img/ohto.svg"
 import ookikuf from "assets/img/ookiku.svg"
 import purpleg from "assets/img/purpleguy.svg"
 import shingeki from "assets/img/snk.svg"
-import man from "assets/img/cara.svg"
+import pokem from "assets/img/pokemon.svg"
 
 const AnimeM = () => {
     return(
@@ -25,7 +25,7 @@ const AnimeM = () => {
                     <img src={dayss} alt="days"/>
                 </section>
                 <section>
-                    <img src={mononoke} alt="hime"/>
+                    <img src={pokem}alt="pokemon"/>
                 </section>
             </div>
             <div>
@@ -39,7 +39,7 @@ const AnimeM = () => {
                     <img src={purpleg} alt="purpleguy"/>
                 </section>
                 <section>
-                    <img src={man}alt="cara"/>
+                    <img src={ohto} alt="wonder egg"/>
                 </section>
             </div>
         </s.AnimeM>

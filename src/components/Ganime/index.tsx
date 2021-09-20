@@ -1,5 +1,5 @@
 import * as s from "./styles"
-import capa from "assets/img/anime capa.svg"
+import capa from "assets/img/nee2.0.svg"
 
 const Ganime = () => {
 

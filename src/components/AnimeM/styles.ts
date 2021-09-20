@@ -7,5 +7,7 @@ export const AnimeM = styled.main`
         flex-direction: row;
         color: ${colors.white};
     }
-    
+    h2{
+        color: ${colors.white};
+    }
 `

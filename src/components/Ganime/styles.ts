@@ -3,9 +3,9 @@ import { colors } from "styles/globalStyle"
 
 export const Ganime = styled.header`
     img{
-        height: 100px;
+        height: 250px;
         border: 0;
-        margin: 80%;
+        margin:  0 10%;
         align-items: center;
         background-color: ${colors.blue};
     }
