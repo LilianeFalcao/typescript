@@ -6,7 +6,9 @@ export const colors = {
     bluerg: " rgba(64, 69, 81, 0.83)",
     shadow: " rgba(0, 0, 0, .2)",
     back: " rgba(0, 0, 0, .5)",
-    omg: "rgba(46, 50, 63, 0.918)"
+    omg: "rgba(46, 50, 63, 0.918)",
+    F: " #fff",
+    core: " #334979"
 }
 export default createGlobalStyle`
     *{

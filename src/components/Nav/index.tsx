@@ -17,22 +17,34 @@ const Nav = () => {
                         <img src={Animetop} alt= "anime art"/> 
                     </picture>
                 </li>
-                <li><a href=""> pixel </a>
+                <li><h3> pixel </h3> 
                     <picture>
                         <img src={pixel} alt= "pixel art"/> 
                     </picture>
                 </li>
-                <li><a href=""> tradicional </a>
+                <li><h3> tradicional </h3>
                     <picture>
                         <img src={Tradicional} alt= "tradicional art"/> 
                     </picture>
                 </li>
-                <li><a href=""> comic</a>
+                <li><h3> comics </h3>
                     <picture>
                         <img src={comic} alt= "comic art"/> 
                     </picture>
                 </li>
-                <li><a href=""> todos </a>
+                <li><h3> todos </h3>
+                    <picture>
+                    <img src={wallpaper} alt= "wallpaper art"/>
+                    </picture>
+                </li>
+                <li>
+                    <Link to = "/AnimeGuia" >Login</Link>
+                    <picture>
+                    <img src={wallpaper} alt= "wallpaper art"/>
+                    </picture>
+                </li>
+                <li>
+                    <Link to = "/register" >registrar</Link>
                     <picture>
                     <img src={wallpaper} alt= "wallpaper art"/>
                     </picture>
