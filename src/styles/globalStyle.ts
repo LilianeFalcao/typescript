@@ -7,8 +7,10 @@ export const colors = {
     shadow: " rgba(0, 0, 0, .2)",
     back: " rgba(0, 0, 0, .5)",
     omg: "rgba(46, 50, 63, 0.918)",
-    F: " #fff",
-    core: " #334979"
+    F: " rgba(0, 0, 0, .7)",
+    core: "rgba(10, 10, 10, 0.5)",
+    fs:"#fff",
+    ok:"#2d3e64"
 }
 export default createGlobalStyle`
     *{
