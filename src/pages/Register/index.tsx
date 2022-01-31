@@ -4,6 +4,9 @@ import {} from "react-icons"
 import {useForm} from "react-hook-form"
 import { useCallback, useEffect, useState } from "react";
 import Button from "styles/Button";
+import { apiUser } from "services/data";
+import { toast } from "react-toastify";
+import { AxiosError } from "axios";
 
 const Register = () => {
     const[isLoading, setIsLoading] = useState(true)
@@ -16,10 +19,16 @@ const Register = () => {
 
     const handleRegister  = useCallback(async (data) => {
         try {
-            console.log(data)
+            setIsLoading(true)
+            await apiUser.register(data)
+            toast.success("Bem-vindo, cadastro feito com sucesso")
         } catch (error) {
-            console.log(error);
-        }
+            const erro = error as AxiosError 
+            const msg = erro.response?.data.errors.map((i:any) => i.message);
+            toast.error(`falha no cadastro! ${msg.join("")}`)
+           }finally{
+            setIsLoading(false)
+           }
     }, []);
 
  return (
@@ -41,7 +50,7 @@ const Register = () => {
                 <div>
                 <input type="password" 
                 placeholder="senha" 
-                required {...register("senha")}>
+                required {...register("password")}>
                 </input>
                 </div>
                 <Button type = "submit">
