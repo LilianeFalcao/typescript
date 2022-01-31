@@ -2,7 +2,7 @@ import * as s from "./styles"
 import {Loading} from "components";
 import {} from "react-icons"
 import {useForm} from "react-hook-form"
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Button from "styles/Button";
 
 const Register = () => {
@@ -14,23 +14,31 @@ const Register = () => {
         setIsLoading(false)
     }, []);
 
+    const handleRegister  = useCallback(async (data) => {
+        try {
+            console.log(data)
+        } catch (error) {
+            console.log(error);
+        }
+    }, []);
+
  return (
  <>
  {
     isLoading ? (<Loading />) :(<>
  <s.Main>
         <div className="loginb">
-            <h1>cadastre-se aqui </h1> 
-            <form method="POST">
+            <form method="POST" onSubmit={handleSubmit(handleRegister)}>
+            <p>Cadastre-se aqui </p> 
+            <p>Usuario</p>
                 <div>
-                <p>Usuario</p>
                 <input type="email" 
                 placeholder="email de usuario" 
                 required {...register("email")}>
                 </input>
                 </div>
+            <p>Senha</p>
                 <div>
-                <p>Senha</p>
                 <input type="password" 
                 placeholder="senha" 
                 required {...register("senha")}>

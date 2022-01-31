@@ -31,4 +31,4 @@ return (
     );
    };
 
-export default AnimeM;
+export default Upload;

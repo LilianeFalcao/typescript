@@ -22,13 +22,11 @@ export const Main = styled.main`
     padding: 70px;
     border-radius: 25px ;
    }
-   h1{
-        margin: 0;
-        padding: 0.3rem;
-        text-align: center;
-        font-size: 21px;
-        color: ${colors.white};
-   }
+     p{
+          margin: 0;
+          padding: 0 20px;
+          font-weight: bold;
+        }
    div{
         border: none;
         border-bottom: 1px solid ${colors.fs};
@@ -37,11 +35,6 @@ export const Main = styled.main`
         height: 40px;
         color: ${colors.white};
         font-size: 16px;
-       p{
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        }
         input{
         width:  100%;
         margin-bottom: 25px;
