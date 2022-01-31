@@ -38,7 +38,7 @@ const Nav = () => {
                     </picture>
                 </li>
                 <li>
-                    <Link to = "/AnimeGuia" >Login</Link>
+                    <Link to = "/Login" >Login</Link>
                     <picture>
                     <img src={wallpaper} alt= "wallpaper art"/>
                     </picture>

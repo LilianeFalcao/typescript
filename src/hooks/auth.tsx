@@ -18,7 +18,7 @@ const AuthProvider: React.FC = ({ children }) => {
         localStorage.setItem("@Pdmonn: token", token)
         localStorage.setItem("@Pdmonn: user", JSON.stringify(user))
     },[],
-) 
+  ) 
 
     const RemoveLocalStorage = useCallback (
     async  () =>{
@@ -26,7 +26,7 @@ const AuthProvider: React.FC = ({ children }) => {
         localStorage.removeItem("@Pdmonn: user")
     },
     [],
- )
+  )
 
   const singOut = useCallback(
     async() =>{
@@ -34,10 +34,11 @@ const AuthProvider: React.FC = ({ children }) => {
         await RemoveLocalStorage()
         delete api.defaults.headers.common.Authorization;
     },
-    [],
-)
+    [RemoveLocalStorage],
+  )
 
-  
+
+
 const loadUserStorageData = useCallback (
     async () =>{
         const token = localStorage.getItem("@Pdmonn: token")
