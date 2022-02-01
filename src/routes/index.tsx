@@ -1,9 +1,12 @@
 import {Switch, Route} from "react-router-dom"
-import {home,AnimeG, Register, Login} from "pages"
+import {home,AnimeG, Register, Login, AdmComents} from "pages"
+import { PrivateRoute } from "./PrivateRoute"
 
 const routes = () => {
     return(
         <Switch>
+            <PrivateRoute path="/Adm" exact  component= {AdmComents} />
+
             <Route path ="/Login" exact component={Login}/>
             <Route path ="/Register" exact component={Register}/>
             <Route path ="/AnimeGuia" exact component={AnimeG}/>

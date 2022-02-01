@@ -1,5 +1,6 @@
 export { default as Header} from "./Header" 
 export { default as Nav} from "./Nav" 
+export { default as NavAdm} from "./NavAdm" 
 export { default as Main} from "./Main" 
 export { default as Ganime} from "./Ganime" 
 export { default as AnimeM} from "./AnimeM" 
