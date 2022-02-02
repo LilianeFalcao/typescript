@@ -11,7 +11,9 @@ export const colors = {
     F: " rgba(0, 0, 0, .7)",
     core: "rgba(10, 10, 10, 0.5)",
     fs:"#fff",
-    ok:"#2d3e64"
+    ok:"#2d3e64",
+    Silver: "#C0C0C0",
+    pretao: "#000000"
 }
 export default createGlobalStyle`
     *{

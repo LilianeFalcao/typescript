@@ -6,8 +6,7 @@ import { apiComent } from "services/data";
 
 const Home = () => {
     const [, setComents] = useState<IComentarioData[]>();
-    const[isLoading, setIsLoading] = useState(true)
-    
+    const[isLoading, setIsLoading] = useState(true) 
     useEffect(() => {
         async function fetchData() {
             const response = await apiComent.index();
@@ -16,14 +15,16 @@ const Home = () => {
         }
         fetchData();
     }, []);
+
  return (
  <>
  {
     isLoading ? (<Loading />) :(<>
- <Header />
- <Nav />
- <Main />
+    <Header />
+    <Nav />
+    <Main />
     </>
+
 )}
 
  </>
