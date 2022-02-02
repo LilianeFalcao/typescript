@@ -5,11 +5,13 @@ import { IComentarioData } from "interface/coment.interface";
 import { useEffect, useState } from "react";
 import { apiComent } from "services/data";
 import Button from "styles/Button";
+import { useHistory } from "react-router-dom";
 
 const AdmComents = () => {
     const [, setComents] = useState<IComentarioData[]>();
     const[isLoading, setIsLoading] = useState(true)
-    
+    const history = useHistory()
+
     useEffect(() => {
         async function fetchData() {
             const response = await apiComent.index();
@@ -26,8 +28,8 @@ const AdmComents = () => {
  <NavAdm />
  <s.Main>
         <div>
-            <Button type ="button">
-                add
+            <Button type ="button" onClick={() => history.push("Adm/coments")}> 
+            add 
             </Button>
         </div>
         <table>
