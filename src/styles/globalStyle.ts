@@ -13,7 +13,9 @@ export const colors = {
     fs:"#fff",
     ok:"#2d3e64",
     Silver: "#C0C0C0",
-    pretao: "#000000"
+    pretao: "#000000",
+    red: "#660000",
+    green: "#2c4c40"
 }
 export default createGlobalStyle`
     *{

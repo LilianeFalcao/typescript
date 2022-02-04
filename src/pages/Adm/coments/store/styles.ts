@@ -16,19 +16,20 @@ export const Main = styled.main`
         font-weight: bold;
         background-color: ${colors.ok};
         }
-        div{
-            margin: 2rem 0 ;
-            display: flex;
-            grid-template-columns: 10rem auto;
-            label{
-                background-color: ${colors.white};
-                color: ${colors.pretao};
-            }
-            textarea{
-                padding: 0.4rem;
-                height: 5rem;
-                background-color: ${colors.white};
-            }
+        div {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: 5rem auto;
+        background-color: ${colors.white};
+        label{
+            background-color: ${colors.white};
+            color: ${colors.pretao};
         }
+        textarea {
+            padding: 0.4rem;
+            border-radius: 0.5rem;
+            height: 10rem;
+            background-color: ${colors.white};
+      }
     }
 `

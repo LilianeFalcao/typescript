@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { apiComent } from "services/data";
 import Button from "styles/Button";
 import { useHistory } from "react-router-dom";
+import { FcAddDatabase } from "react-icons/fc";
 
 const AdmComents = () => {
     const [, setComents] = useState<IComentarioData[]>();
@@ -28,9 +29,7 @@ const AdmComents = () => {
  <NavAdm />
  <s.Main>
         <div>
-            <Button type ="button" onClick={() => history.push("Adm/coments")}> 
-            add 
-            </Button>
+            <Button type ="button" onClick={() => history.push("Adm/coments")}><FcAddDatabase /></Button>
         </div>
         <table>
             <thead>
@@ -43,10 +42,10 @@ const AdmComents = () => {
             </thead>
             <tbody>
                 <td>
-                    <Button type="button"> editar</Button>
+                    <Button type="button" bgcolor="edit"> editar</Button>
                 </td>
                 <td>
-                    <Button type="button"> remover</Button>
+                    <Button type="button" bgcolor="remove"> remover</Button>
                 </td>
             </tbody>
         </table>
